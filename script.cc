@@ -89,6 +89,7 @@ init_run_script ()
 	  char *eq = strchr (p, '=');
 	  *eq = '\0';
 	  if (strcasecmp (p, "comspec") != 0
+	      && strncasecmp (p, "cygwin", 7) != 0
 	      && strcasecmp (p, "path") != 0
 	      && strncasecmp (p, "system", 7) != 0
 	      && strncasecmp (p, "user", 4) != 0
